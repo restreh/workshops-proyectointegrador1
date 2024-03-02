@@ -2,8 +2,18 @@
 {% block content %}
 
 <body>
-    <h3>Movies per year chart</h3>
-    <img src="data:image/png;base64,{{graphic}}" alt="Movies per year chart">
+
+    <div class="container"  style="display: flex; flex-wrap: wrap; justify-content: center; vertical-align: top; text-align: center;">
+        <div>
+            <h3>Movies per year chart</h3>
+        <img style="max-width:500px;" src="data:image/png;base64,{{graphic}}" alt="Movies per year chart">
+        </div>
+        <div>
+            <h3>Movies per genre chart</h3>
+            <img style="max-width: 500px;" src="data:another_image/png;base64,{{graphic_2}}" alt="Movies per genre chart">
+        </div>  
+    </div>
+
 </body>
 
 {% endblock content %}
